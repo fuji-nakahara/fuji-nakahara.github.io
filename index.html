@@ -55,8 +55,10 @@
             <header class="card-header">
               <h4 class="mb-0">Blog</h4>
             </header>
-            <div class="list-group list-group-flush">
-              <a href="https://fuji-nakahara.hatenablog.com/" target="_blank" class="list-group-item list-group-item-action">フジ・ナカハラのSF日記</a>
+            <div class="card-body">
+              <p class="card-text"><a href="https://fuji-nakahara.hatenablog.com/">フジ・ナカハラのSF日記</a></p>
+            </div>
+            <div class="list-group list-group-flush" id="blog-entries">
             </div>
           </section>
         </div>
@@ -74,5 +76,7 @@
         </div>
       </div>
     </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="./javascripts/fetch_blog_feed.js"></script>
   </body>
 </html>
