@@ -1,0 +1,15 @@
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "url": "{{ site.url }}",
+    "sameAs": [
+    "{{ site.blog_url }}",
+    "https://twitter.com/{{ site.tiwtter_username }}",
+    "https://github.com/{{ site.github_username }}"
+    ],
+    "name": "{{ site.title }}",
+    "image": "{{ '/images/avatar.png' | absolute_url }}",
+    "email": "{{ site.email }}"
+  }
+</script>

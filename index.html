@@ -1,103 +1,57 @@
-<!doctype html>
-<html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>フジ・ナカハラ</title>
-    <meta name="description" content="フジ・ナカハラのポートフォリオ">
-    <meta property="og:url" content="https://fujinakahara.com">
-    <meta property="og:title" content="フジ・ナカハラ">
-    <meta property="og:description" content="フジ・ナカハラのポートフォリオ">
-    <meta property="og:image" content="https://fujinakahara.com/images/avatar.png">
-    <meta property="og:type" content="profile">
-    <meta property="og:locale" content="ja_JP">
-    <meta name="twitter:site" content="@fuji_nakahara">
-    <link rel="shortcut icon" href="./images/favicon.ico">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/brands.css" integrity="sha384-KtmfosZaF4BaDBojD9RXBSrq5pNEO79xGiggBxf8tsX+w2dBRpVW5o0BPto2Rb2F" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/fontawesome.css" integrity="sha384-8WwquHbb2jqa7gKWSoAwbJBV2Q+/rQRss9UXL5wlvXOZfSodONmVnifo/+5xJIWX" crossorigin="anonymous">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118273401-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-118273401-1');
-    </script>
-    <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "Person",
-        "url": "https://fujinakahara.com/",
-        "sameAs": [
-          "https://fuji-nakahara.hatenablog.com/",
-          "https://twitter.com/fuji_nakahara",
-          "https://github.com/fuji-nakahara"
-        ],
-        "name": "フジ・ナカハラ",
-        "image": "https://fujinakahara.com/images/avatar.png",
-        "email": "fujinakahara2032@gmail.com"
-      }
-      </script>
-  </head>
-  <body>
-    <section class="container">
-      <header class="text-center my-5">
-        <img src="./images/avatar.png" alt="avatar" width="150" height="150" class="border rounded-circle m-2">
-        <h1>フジ・ナカハラ</h1>
+---
+layout: default
+---
+
+<header class="text-center my-5">
+  <img src="{{ '/images/avatar.png' | relative_path }}" alt="avatar" width="150" height="150" class="border rounded-circle m-2">
+  <h1>{{ site.title }}</h1>
+</header>
+<div class="row">
+  <div class="col-sm-6 col-lg-4">
+    <section class="card mb-3" id="about">
+      <header class="card-header">
+        <h4 class="mb-0">About</h4>
       </header>
-      <div class="row">
-        <div class="col-sm-6 col-lg-4">
-          <section class="card mb-3" id="about">
-            <header class="card-header">
-              <h4 class="mb-0">About</h4>
-            </header>
-            <div class="card-body">
-              <ul class="list-unstyled">
-                <li><a href="http://school.genron.co.jp/sf/" target="_blank">ゲンロン 大森望 SF創作講座</a> 第3期受講生</li>
-                <li>ソフトウェアエンジニア</li>
-              </ul>
-              <dl>
-                <dt>Email</dt>
-                <dd><a href="mailto:fujinakahara2032@gmail.com">fujinakahara2032@gmail.com</a></dd>
-                <dt>Website</dt>
-                <dd><a href="https://fujinakahara.com">https://fujinakahara.com</a></dd>
-              </dl>
-            </div>
-          </section>
-        </div>
-        <div class="col-sm-6 col-lg-4" id="blog">
-          <section class="card mb-3">
-            <header class="card-header">
-              <h4 class="mb-0">Blog</h4>
-            </header>
-            <div class="card-body">
-              <p class="card-text"><a href="https://fuji-nakahara.hatenablog.com/">フジ・ナカハラのSF日記</a></p>
-            </div>
-            <div class="list-group list-group-flush" id="blog-entries">
-            </div>
-          </section>
-        </div>
-        <div class="col-sm-6 col-lg-4">
-          <section class="card mb-3" id="accounts">
-            <header class="card-header">
-              <h4 class="mb-0">Accounts</h4>
-            </header>
-            <div class="list-group list-group-flush">
-              <a href="http://school.genron.co.jp/works/sf/2018/students/fujinakahara/" target="_blank" class="list-group-item list-group-item-action">SF創作講座</a>
-              <a href="https://twitter.com/fuji_nakahara" target="_blank" class="list-group-item list-group-item-action"><i class="fab fa-twitter"></i> Twitter</a>
-              <a href="https://github.com/fuji-nakahara" target="_blank" class="list-group-item list-group-item-action"><i class="fab fa-github"></i> GitHub</a>
-              <a href="http://profile.hatena.ne.jp/fuji-nakahara/" target="_blank" class="list-group-item list-group-item-action">Hatena</a>
-              <a href="https://kakuyomu.jp/users/fuji-nakahara" target="_blank" class="list-group-item list-group-item-action">カクヨム</a>
-              <a href="https://note.mu/fuji_nakahara" target="_blank" class="list-group-item list-group-item-action">note</a>
-            </div>
-          </section>
-        </div>
+      <div class="card-body">
+        <ul class="list-unstyled">
+          <li>
+            <a href="http://school.genron.co.jp/sf/" target="_blank">ゲンロン 大森望 SF創作講座</a> 第3期受講生
+          </li>
+          <li>ソフトウェアエンジニア</li>
+        </ul>
+        <dl>
+          <dt>Email</dt>
+          <dd>
+            <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+          </dd>
+          <dt>Website</dt>
+          <dd>
+            <a href="{{ site.url }}">{{ site.url }}</a>
+          </dd>
+        </dl>
       </div>
-      <footer class="text-center">
-        <small class="text-muted">&copy; 2018 Fuji Nakahara | The robot is generated by <a href="https://robohash.org/" target="_blank">Robohash.org</a></small>.
-      </footer>
     </section>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="./javascripts/fetch_blog_feed.js"></script>
-  </body>
-</html>
+  </div>
+  <div class="col-sm-6 col-lg-4" id="blog">
+    <section class="card mb-3">
+      <header class="card-header d-flex justify-content-between align-items-baseline">
+        <h4 class="mb-0">Blog</h4>
+        <div class="card-subtitle"><a class="text-secondary" href="https://fuji-nakahara.hatenablog.com/">フジ・ナカハラのSF日記</a></div>
+      </header>
+      <div class="list-group list-group-flush" id="blog-entries">
+      </div>
+    </section>
+  </div>
+  <div class="col-sm-6 col-lg-4">
+    <section class="card mb-3" id="accounts">
+      <header class="card-header">
+        <h4 class="mb-0">Accounts</h4>
+      </header>
+      <div class="list-group list-group-flush">
+        {% for account in site.data.accounts %}
+          <a href="{{ account.url }}" target="_blank" class="list-group-item list-group-item-action">{{ account.title }}</a>
+        {% endfor %}
+      </div>
+    </section>
+  </div>
+</div>

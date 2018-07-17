@@ -1,3 +1,3 @@
-# fujinakahara.com
+# fuji-nakahara.github.io
 
-https://fujinakahara.com
+https://fuji-nakahara.github.io/
