@@ -1,69 +1,23 @@
 ---
-layout: default
+layout: home
 ---
 
-<header class="text-center my-5">
-  <img src="{{ '/images/avatar.png' | relative_path }}" alt="avatar" width="150" height="150" class="border rounded-circle m-2">
-  <h1>{{ site.title }}</h1>
-</header>
-<div class="row">
-  <div class="col-sm-6 col-lg-4 col-xl-3">
-    <section class="card mb-3" id="about">
-      <header class="card-header">
-        <h4 class="mb-0">About</h4>
-      </header>
-      <div class="card-body">
-        <ul class="list-unstyled">
-          <li>
-            <a href="http://school.genron.co.jp/sf/" target="_blank">ゲンロン 大森望 SF創作講座</a> 第3期受講生
-          </li>
-          <li>ソフトウェアエンジニア</li>
+<div class="d-flex flex-column flex-sm-row justify-content-center align-items-center">
+  <img src="{{ '/images/avatar.png' | relative_path }}" alt="avatar" width="150" height="150" class="d-block border rounded-circle bg-white my-2 my-sm-0 mx-sm-3">
+  <div>
+    <h1>{{ site.title }}</h1>
+    <ul class="list-unstyled">
+      <li><a href="{{ site.url }}">{{ site.url }}</a></li>
+      <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+      <li>
+        <ul class="list-inline">
+          {%- for account in site.data.accounts -%}
+            <li class="list-inline-item">
+              <a href="{{ account.url }}" target="_blank">{{ account.title }}</a>
+            </li>
+          {%- endfor -%}
         </ul>
-        <dl>
-          <dt>Email</dt>
-          <dd>
-            <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-          </dd>
-          <dt>Website</dt>
-          <dd>
-            <a href="{{ site.url }}">{{ site.url }}</a>
-          </dd>
-        </dl>
-      </div>
-    </section>
-  </div>
-  <div class="col-sm-6 col-lg-4 col-xl-3">
-    <section class="card mb-3" id="works">
-      <header class="card-header">
-        <h4 class="mb-0">Works</h4>
-      </header>
-      <div class="list-group list-group-flush">
-        {% for work in site.data.works %}
-          <a href="{{ work.url }}" class="list-group-item list-group-item-action">{{ work.title }}</a>
-        {% endfor %}
-      </div>
-    </section>
-  </div>
-  <div class="col-sm-6 col-lg-4 col-xl-3" id="blog">
-    <section class="card mb-3">
-      <header class="card-header d-flex justify-content-between align-items-baseline">
-        <h4 class="mb-0">Blog</h4>
-        <div class="card-subtitle"><a class="text-secondary" href="https://fuji-nakahara.hatenablog.com/">フジ・ナカハラのSF日記</a></div>
-      </header>
-      <div class="list-group list-group-flush" id="blog-entries">
-      </div>
-    </section>
-  </div>
-  <div class="col-sm-6 col-lg-4 col-xl-3">
-    <section class="card mb-3" id="accounts">
-      <header class="card-header">
-        <h4 class="mb-0">Accounts</h4>
-      </header>
-      <div class="list-group list-group-flush">
-        {% for account in site.data.accounts %}
-          <a href="{{ account.url }}" target="_blank" class="list-group-item list-group-item-action">{{ account.title }}</a>
-        {% endfor %}
-      </div>
-    </section>
+      </li>
+    </ul>
   </div>
 </div>
