@@ -1,0 +1,38 @@
+<template>
+  <div class="row align-items-center justify-content-center">
+    <div class="col-auto text-center mb-2 mb-md-0">
+      <img alt="avatar" src="../assets/avatar.png" width="150" height="150" class="img-fluid rounded-circle bg-white">
+    </div>
+    <div class="col-md-auto text-center text-md-left">
+      <h1>{{ name }}</h1>
+      <address class="lead mb-0">
+        <a :href="'mailto:' + email">{{ email }}</a>
+        <ul class="list-inline">
+          <li v-for="account in accounts" :key="account.name" class="account list-inline-item">
+            <a :href="account.url" target="_blank">{{ account.name }}</a>
+          </li>
+        </ul>
+      </address>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Profile',
+  props: {
+    name: String,
+    email: String,
+    accounts: Array
+  }
+}
+</script>
+
+<style scoped>
+li.account {
+  margin-right: 0;
+}
+li.account:not(:last-child):after {
+  content: "・";
+}
+</style>

@@ -1,0 +1,24 @@
+{
+  "name": "fuji-nakahara.github.io",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "bootstrap-vue": "^2.0.0-rc.11",
+    "moment": "^2.22.2",
+    "rss-parser": "^3.4.3",
+    "vue": "^2.5.17",
+    "vue-analytics": "^5.16.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.4",
+    "@vue/cli-plugin-eslint": "^3.0.4",
+    "@vue/cli-service": "^3.0.4",
+    "@vue/eslint-config-standard": "^3.0.4",
+    "vue-template-compiler": "^2.5.17"
+  }
+}
