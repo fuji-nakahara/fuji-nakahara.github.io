@@ -22,16 +22,16 @@ export default {
   name: 'app',
   data() {
     return {
-      name: 'フジ・ナカハラ',
-      email: 'fujinakahara2032@gmail.com',
+      name: process.env.VUE_APP_NAME,
+      email: process.env.VUE_APP_EMAIL,
       accounts: [
         {
           name: 'Twitter',
-          url: 'https://twitter.com/fuji_nakahara',
+          url: `https://twitter.com/${process.env.VUE_APP_TWITTER_USERNAME}`,
         },
         {
           name: 'GitHub',
-          url: 'https://github.com/fuji-nakahara',
+          url: `https://github.com/${process.env.VUE_APP_GITHUB_USERNAME}`,
         },
         {
           name: 'Hatena',
@@ -43,7 +43,7 @@ export default {
         },
         {
           name: 'amakan',
-          url: 'https://amakan.net/@fuji_nakahara',
+          url: `https://amakan.net/@${process.env.VUE_APP_TWITTER_USERNAME}`,
         },
       ],
       feedUrls: [
