@@ -9,15 +9,14 @@
     <title><%= VUE_APP_NAME %></title>
     <meta name="description" content="<%= VUE_APP_DESCRIPTION %>">
 
-    <!-- FIXME: Add og:image -->
     <meta property="og:url" content="<%= VUE_APP_URL %><%= BASE_URL %>">
     <meta property="og:title" content="<%= VUE_APP_NAME %>">
     <meta property="og:description" content="<%= VUE_APP_DESCRIPTION %>">
+    <meta property="og:image" content="<%= VUE_APP_URL %><%= BASE_URL %>robot.png">
     <meta property="og:type" content="profile">
     <meta property="og:locale" content="ja_JP">
     <meta name="twitter:site" content="@<%= VUE_APP_TWITTER_USERNAME %>">
 
-    <!-- FIXME: Add image -->
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
@@ -29,6 +28,7 @@
           "https://github.com/<%= VUE_APP_GITHUB_USERNSME %>"
         ],
         "name": "<%= VUE_APP_NAME %>",
+        "image": "<%= VUE_APP_URL %><%= BASE_URL %>robot.png",
         "email": "<%= VUE_APP_EMAIL %>"
       }
     </script>

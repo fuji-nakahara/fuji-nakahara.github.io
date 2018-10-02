@@ -1,8 +1,8 @@
 <template>
   <div class="row align-items-center justify-content-center">
     <div class="col-auto text-center mb-2 mb-md-0">
-      <img alt="avatar"
-           src="../assets/avatar.png"
+      <img alt="robot"
+           src="/robot.png"
            width="150"
            height="150"
            class="img-fluid rounded-circle bg-white">
