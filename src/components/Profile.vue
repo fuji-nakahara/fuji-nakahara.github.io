@@ -1,7 +1,11 @@
 <template>
   <div class="row align-items-center justify-content-center">
     <div class="col-auto text-center mb-2 mb-md-0">
-      <img alt="avatar" src="../assets/avatar.png" width="150" height="150" class="img-fluid rounded-circle bg-white">
+      <img alt="avatar"
+           src="../assets/avatar.png"
+           width="150"
+           height="150"
+           class="img-fluid rounded-circle bg-white">
     </div>
     <div class="col-md-auto text-center text-md-left">
       <h1>{{ name }}</h1>
@@ -23,9 +27,9 @@ export default {
   props: {
     name: String,
     email: String,
-    accounts: Array
-  }
-}
+    accounts: Array,
+  },
+};
 </script>
 
 <style scoped>

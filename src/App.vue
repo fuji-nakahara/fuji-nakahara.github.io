@@ -15,47 +15,47 @@
 </template>
 
 <script>
-import Profile from './components/Profile.vue'
-import FeedList from './components/FeedList.vue'
+import Profile from './components/Profile.vue';
+import FeedList from './components/FeedList.vue';
 
 export default {
   name: 'app',
-  data () {
+  data() {
     return {
       name: 'フジ・ナカハラ',
       email: 'fujinakahara2032@gmail.com',
       accounts: [
         {
           name: 'Twitter',
-          url: 'https://twitter.com/fuji_nakahara'
+          url: 'https://twitter.com/fuji_nakahara',
         },
         {
           name: 'GitHub',
-          url: 'https://github.com/fuji-nakahara'
+          url: 'https://github.com/fuji-nakahara',
         },
         {
           name: 'Hatena',
-          url: 'http://profile.hatena.ne.jp/fuji-nakahara/'
+          url: 'http://profile.hatena.ne.jp/fuji-nakahara/',
         },
         {
           name: 'カクヨム',
-          url: 'https://kakuyomu.jp/users/fuji-nakahara'
+          url: 'https://kakuyomu.jp/users/fuji-nakahara',
         },
         {
           name: 'amakan',
-          url: 'https://amakan.net/@fuji_nakahara'
-        }
+          url: 'https://amakan.net/@fuji_nakahara',
+        },
       ],
       feedUrls: [
         'https://fuji-nakahara.hatenablog.com/feed',
         'https://fuji-nakahara.github.io/genron-sf-2018/feed.xml',
-        'https://fuji-nakahara.github.io/cyborg-classmate/feed.xml'
-      ]
-    }
+        'https://fuji-nakahara.github.io/cyborg-classmate/feed.xml',
+      ],
+    };
   },
   components: {
     Profile,
-    FeedList
-  }
-}
+    FeedList,
+  },
+};
 </script>

@@ -19,22 +19,22 @@
 </template>
 
 <script>
-import moment from 'moment'
+import moment from 'moment';
 
-moment.locale('ja')
+moment.locale('ja');
 
 export default {
   name: 'Feed',
   props: {
-    feed: Object
+    feed: Object,
   },
   methods: {
-    isNew (date) {
-      return moment(date).isAfter(moment().add(-1, 'months'))
+    isNew(date) {
+      return moment(date).isAfter(moment().add(-1, 'months'));
     },
-    fromNow (date) {
-      return moment(date).fromNow()
-    }
-  }
-}
+    fromNow(date) {
+      return moment(date).fromNow();
+    },
+  },
+};
 </script>
