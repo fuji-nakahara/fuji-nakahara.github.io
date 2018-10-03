@@ -1,9 +1,9 @@
 <template>
-  <section class="row">
+  <transition-group name="fade" tag="section" class="row">
     <div v-for="feed in feeds" :key="feed.title" class="col-sm-6 col-lg-4">
       <Feed :feed="feed"></Feed>
     </div>
-  </section>
+  </transition-group>
 </template>
 
 <script>
