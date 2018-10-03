@@ -1,5 +1,7 @@
 <template>
-  <transition-group name="fade" tag="section" class="row">
+  <transition-group enter-active-class="animated slideInUp"
+                    tag="section"
+                    class="row">
     <div v-for="feed in feeds" :key="feed.title" class="col-sm-6 col-lg-4">
       <Feed :feed="feed"></Feed>
     </div>

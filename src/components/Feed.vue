@@ -3,7 +3,9 @@
     <b-card-body>
       <h4 class="card-title mb-0">
         <b-link :href="feed.link" class="text-dark">{{ feed.title }}</b-link>
-        <b-badge v-show="isNew(feed.items[0].isoDate)" variant="primary" class="ml-2">更新</b-badge>
+        <transition appear enter-to-class="animated swing">
+          <b-badge v-show="isNew(feed.items[0].isoDate)" variant="primary" class="ml-2">更新</b-badge>
+        </transition>
       </h4>
     </b-card-body>
     <b-list-group flush>
