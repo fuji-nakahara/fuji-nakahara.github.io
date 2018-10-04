@@ -9,10 +9,8 @@
 </template>
 
 <script>
-import Parser from 'rss-parser';
+import feedparser from 'feedparser-promised';
 import Feed from './Feed.vue';
-
-const parser = new Parser();
 
 export default {
   name: 'FeedList',
@@ -26,13 +24,13 @@ export default {
   },
   created() {
     this.feedUrls.forEach(async (feedUrl) => {
-      const feed = await parser.parseURL(feedUrl);
+      const items = await feedparser.parse(feedUrl);
+
+      const feed = items[0].meta;
+      feed.items = items;
+
       this.feeds.push(feed);
-      this.feeds.sort((a, b) => {
-        const aDate = new Date(a.items[0].isoDate);
-        const bDate = new Date(b.items[0].isoDate);
-        return bDate.getTime() - aDate.getTime();
-      });
+      this.feeds.sort((a, b) => b.items[0].pubDate.getTime() - a.items[0].pubDate.getTime());
     });
   },
   components: {
