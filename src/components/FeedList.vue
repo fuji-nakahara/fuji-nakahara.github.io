@@ -25,11 +25,10 @@ export default {
     };
   },
   created() {
-    const vm = this;
     this.feedUrls.forEach(async (feedUrl) => {
       const feed = await parser.parseURL(feedUrl);
-      vm.feeds.push(feed);
-      vm.feeds.sort((a, b) => {
+      this.feeds.push(feed);
+      this.feeds.sort((a, b) => {
         const aDate = new Date(a.items[0].isoDate);
         const bDate = new Date(b.items[0].isoDate);
         return bDate.getTime() - aDate.getTime();
