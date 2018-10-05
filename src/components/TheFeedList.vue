@@ -5,7 +5,7 @@
                     v-on:after-enter="$emit('enter-feed')"
                     class="row">
     <div v-for="feed in feeds" :key="feed.title" class="col-sm-6 col-lg-4">
-      <TheFeedListItem :feed="feed"></TheFeedListItem>
+      <TheFeedListItem :feed="feed"/>
     </div>
   </transition-group>
 </template>
