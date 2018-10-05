@@ -7,7 +7,7 @@
       <TheProfile/>
     </b-jumbotron>
     <div class="container-fluid">
-      <TheFeedList v-on:enter-feed="showFooter = true"/>
+      <TheFeedList @enter-feed="showFooter = true"/>
       <transition
         appear
         enter-active-class="animated fadeIn"

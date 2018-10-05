@@ -3,7 +3,7 @@
     name="feed-list"
     tag="section"
     enter-active-class="animated slideInUp"
-    v-on:after-enter="$emit('enter-feed')"
+    @after-enter="$emit('enter-feed')"
     class="row"
   >
     <div
