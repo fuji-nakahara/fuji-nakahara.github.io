@@ -27,7 +27,7 @@ import moment from 'moment';
 moment.locale('ja');
 
 export default {
-  name: 'Feed',
+  name: 'TheFeedListItem',
   props: {
     feed: {
       type: Object,

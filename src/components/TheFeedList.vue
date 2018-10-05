@@ -5,22 +5,24 @@
                     v-on:after-enter="$emit('enter-feed')"
                     class="row">
     <div v-for="feed in feeds" :key="feed.title" class="col-sm-6 col-lg-4">
-      <Feed :feed="feed"></Feed>
+      <TheFeedListItem :feed="feed"></TheFeedListItem>
     </div>
   </transition-group>
 </template>
 
 <script>
 import feedparser from 'feedparser-promised';
-import Feed from './Feed.vue';
+import TheFeedListItem from './TheFeedListItem.vue';
 
 export default {
-  name: 'FeedList',
-  props: {
-    feedUrls: Array,
-  },
+  name: 'TheFeedList',
   data() {
     return {
+      feedUrls: [
+        'https://fuji-nakahara.hatenablog.com/feed',
+        'https://fuji-nakahara.github.io/genron-sf-2018/feed.xml',
+        'https://fuji-nakahara.github.io/cyborg-classmate/feed.xml',
+      ],
       feeds: [],
     };
   },
@@ -36,7 +38,7 @@ export default {
     });
   },
   components: {
-    Feed,
+    TheFeedListItem,
   },
 };
 </script>

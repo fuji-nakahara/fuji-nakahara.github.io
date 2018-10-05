@@ -25,11 +25,34 @@
 
 <script>
 export default {
-  name: 'Profile',
-  props: {
-    name: String,
-    email: String,
-    accounts: Array,
+  name: 'TheProfile',
+  data() {
+    return {
+      name: process.env.VUE_APP_NAME,
+      email: process.env.VUE_APP_EMAIL,
+      accounts: [
+        {
+          name: 'Twitter',
+          url: `https://twitter.com/${process.env.VUE_APP_TWITTER_USERNAME}`,
+        },
+        {
+          name: 'GitHub',
+          url: `https://github.com/${process.env.VUE_APP_GITHUB_USERNAME}`,
+        },
+        {
+          name: 'Hatena',
+          url: 'http://profile.hatena.ne.jp/fuji-nakahara/',
+        },
+        {
+          name: 'カクヨム',
+          url: 'https://kakuyomu.jp/users/fuji-nakahara',
+        },
+        {
+          name: 'amakan',
+          url: `https://amakan.net/@${process.env.VUE_APP_TWITTER_USERNAME}`,
+        },
+      ],
+    };
   },
 };
 </script>
