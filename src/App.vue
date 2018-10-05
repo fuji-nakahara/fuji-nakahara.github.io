@@ -4,17 +4,10 @@
       fluid
       tag="section"
     >
-      <TheProfile
-        :name="name"
-        :email="email"
-        :accounts="accounts"
-      />
+      <TheProfile/>
     </b-jumbotron>
     <div class="container-fluid">
-      <TheFeedList
-        :feedUrls="feedUrls"
-        v-on:enter-feed="showFooter = true"
-      />
+      <TheFeedList v-on:enter-feed="showFooter = true"/>
       <transition
         appear
         enter-active-class="animated fadeIn"
@@ -47,6 +40,7 @@ export default {
   name: 'app',
   data() {
     return {
+      name: process.env.VUE_APP_NAME,
       showFooter: false,
     };
   },
