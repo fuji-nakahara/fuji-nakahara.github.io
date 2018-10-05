@@ -1,10 +1,16 @@
 <template>
-  <transition-group name="feed-list"
-                    enter-active-class="animated slideInUp"
-                    tag="section"
-                    v-on:after-enter="$emit('enter-feed')"
-                    class="row">
-    <div v-for="feed in feeds" :key="feed.title" class="col-sm-6 col-lg-4">
+  <transition-group
+    name="feed-list"
+    tag="section"
+    enter-active-class="animated slideInUp"
+    v-on:after-enter="$emit('enter-feed')"
+    class="row"
+  >
+    <div
+      v-for="feed in feeds"
+      :key="feed.title"
+      class="col-sm-6 col-lg-4"
+    >
       <TheFeedListItem :feed="feed"/>
     </div>
   </transition-group>
