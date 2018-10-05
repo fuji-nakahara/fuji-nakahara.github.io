@@ -3,8 +3,8 @@
     name="feed-list"
     tag="section"
     enter-active-class="animated slideInUp"
-    @after-enter="$emit('enter-feed')"
     class="row"
+    @after-enter="$emit('enter-feed')"
   >
     <div
       v-for="feed in feeds"
@@ -22,6 +22,9 @@ import TheFeedListItem from './TheFeedListItem.vue';
 
 export default {
   name: 'TheFeedList',
+  components: {
+    TheFeedListItem,
+  },
   data() {
     return {
       feedUrls: [
@@ -42,9 +45,6 @@ export default {
       this.feeds.push(feed);
       this.feeds.sort((a, b) => b.items[0].pubDate.getTime() - a.items[0].pubDate.getTime());
     });
-  },
-  components: {
-    TheFeedListItem,
   },
 };
 </script>

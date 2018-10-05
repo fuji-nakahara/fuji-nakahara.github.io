@@ -38,15 +38,15 @@ import TheFeedList from './components/TheFeedList.vue';
 
 export default {
   name: 'app',
+  components: {
+    TheProfile,
+    TheFeedList,
+  },
   data() {
     return {
       name: process.env.VUE_APP_NAME,
       showFooter: false,
     };
-  },
-  components: {
-    TheProfile,
-    TheFeedList,
   },
 };
 </script>
