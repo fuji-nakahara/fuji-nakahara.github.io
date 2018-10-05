@@ -29,7 +29,10 @@ moment.locale('ja');
 export default {
   name: 'Feed',
   props: {
-    feed: Object,
+    feed: {
+      type: Object,
+      required: true,
+    },
   },
   methods: {
     isNew(date) {
