@@ -1,6 +1,8 @@
 <template>
-  <transition-group enter-active-class="animated slideInUp"
+  <transition-group name="feed-list"
+                    enter-active-class="animated slideInUp"
                     tag="section"
+                    v-on:after-enter="$emit('enter-feed')"
                     class="row">
     <div v-for="feed in feeds" :key="feed.title" class="col-sm-6 col-lg-4">
       <Feed :feed="feed"></Feed>
@@ -38,3 +40,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.feed-list-move {
+  transition: transform 1s;
+}
+</style>

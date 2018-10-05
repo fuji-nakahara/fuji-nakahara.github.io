@@ -3,7 +3,7 @@
     <b-card-body>
       <h4 class="card-title">
         <b-link :href="feed.link" class="text-dark">{{ feed.title }}</b-link>
-        <transition appear enter-to-class="animated swing">
+        <transition appear enter-to-class="animated rubberBand delay-1s">
           <b-badge v-show="isNew(feed.items[0].pubDate)" variant="primary" class="ml-2">更新</b-badge>
         </transition>
       </h4>
