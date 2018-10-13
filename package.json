@@ -13,14 +13,23 @@
     "bootstrap-vue": "^2.0.0-rc.11",
     "feedparser-promised": "^2.0.0",
     "moment": "^2.22.2",
+    "register-service-worker": "^1.0.0",
     "vue": "^2.5.17",
     "vue-analytics": "^5.16.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.5",
     "@vue/cli-plugin-eslint": "^3.0.5",
+    "@vue/cli-plugin-pwa": "^3.0.5",
     "@vue/cli-service": "^3.0.5",
     "@vue/eslint-config-airbnb": "^3.0.5",
     "vue-template-compiler": "^2.5.17"
+  },
+  "vue": {
+    "pwa": {
+      "name": "フジ・ナカハラ",
+      "themeColor": "#26a9e0",
+      "msTileColor": "#00aba9"
+    }
   }
 }
