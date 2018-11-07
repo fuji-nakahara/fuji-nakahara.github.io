@@ -62,11 +62,7 @@ export default {
         {
           name: 'カクヨム',
           url: 'https://kakuyomu.jp/users/fuji-nakahara',
-        },
-        {
-          name: 'amakan',
-          url: `https://amakan.net/@${process.env.VUE_APP_TWITTER_USERNAME}`,
-        },
+        }
       ],
     };
   },
