@@ -62,7 +62,11 @@ export default {
         {
           name: 'カクヨム',
           url: 'https://kakuyomu.jp/users/fuji-nakahara',
-        }
+        },
+        {
+          name: 'なろう',
+          url: 'https://mypage.syosetu.com/1358530/',
+        },
       ],
     };
   },
