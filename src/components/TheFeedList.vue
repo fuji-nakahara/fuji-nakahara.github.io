@@ -9,7 +9,7 @@
     <div
       v-for="feed in feeds"
       :key="feed.title"
-      class="col-sm-6 col-lg-4"
+      class="col-sm-6 col-lg-4 col-xl-3"
     >
       <TheFeedListItem :feed="feed"/>
     </div>
