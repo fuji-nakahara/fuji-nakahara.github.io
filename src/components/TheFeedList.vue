@@ -31,6 +31,7 @@ export default {
         'https://fuji-nakahara.hatenablog.com/feed',
         'https://fuji-nakahara.github.io/genron-sf-2018/feed.xml',
         'https://fuji-nakahara.github.io/cyborg-classmate/feed.xml',
+        'https://fuji-nakahara.github.io/transparent-blood-relation/feed.xml',
       ],
       feeds: [],
     };
