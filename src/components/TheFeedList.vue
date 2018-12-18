@@ -32,6 +32,7 @@ export default {
         'https://fuji-nakahara.github.io/genron-sf-2018/feed.xml',
         'https://fuji-nakahara.github.io/cyborg-classmate/feed.xml',
         'https://fuji-nakahara.github.io/transparent-blood-relation/feed.xml',
+        'https://fuji-nakahara.github.io/ai-a-convenience-store-clerk/feed.xml',
       ],
       feeds: [],
     };
