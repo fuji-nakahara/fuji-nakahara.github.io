@@ -42,7 +42,7 @@ export default {
       const items = await feedparser.parse(feedUrl);
 
       const feed = items[0].meta;
-      feed.items = items;
+      feed.items = items.slice(0, 10);
 
       this.feeds.push(feed);
       this.feeds.sort((a, b) => b.items[0].pubDate.getTime() - a.items[0].pubDate.getTime());
