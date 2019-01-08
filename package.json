@@ -18,7 +18,7 @@
     "vue-analytics": "^5.16.1"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.2.2",
+    "@vue/cli-plugin-babel": "^3.3.0",
     "@vue/cli-plugin-eslint": "^3.3.0",
     "@vue/cli-plugin-pwa": "^3.2.2",
     "@vue/cli-service": "^3.3.0",
