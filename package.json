@@ -15,7 +15,7 @@
     "moment": "^2.23.0",
     "register-service-worker": "^1.0.0",
     "vue": "^2.5.22",
-    "vue-analytics": "^5.16.1"
+    "vue-analytics": "^5.16.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.3.0",
