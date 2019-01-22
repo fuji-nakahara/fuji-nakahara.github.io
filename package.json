@@ -12,7 +12,7 @@
     "bootstrap": "^4.2.1",
     "bootstrap-vue": "^2.0.0-rc.11",
     "feedparser-promised": "^2.0.0",
-    "moment": "^2.23.0",
+    "moment": "^2.24.0",
     "register-service-worker": "^1.0.0",
     "vue": "^2.5.22",
     "vue-analytics": "^5.16.2"
