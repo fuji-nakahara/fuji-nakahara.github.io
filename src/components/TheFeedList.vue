@@ -29,10 +29,10 @@ export default {
     return {
       feedUrls: [
         'https://fuji-nakahara.hatenablog.com/feed',
-        'https://fuji-nakahara.github.io/genron-sf-2018/feed.xml',
-        'https://fuji-nakahara.github.io/cyborg-classmate/feed.xml',
-        'https://fuji-nakahara.github.io/transparent-blood-relation/feed.xml',
-        'https://fuji-nakahara.github.io/ai-a-convenience-store-clerk/feed.xml',
+        'https://fuji-nakahara.page/genron-sf-2018/feed.xml',
+        'https://fuji-nakahara.page/cyborg-classmate/feed.xml',
+        'https://fuji-nakahara.page/transparent-blood-relation/feed.xml',
+        'https://fuji-nakahara.page/ai-a-convenience-store-clerk/feed.xml',
       ],
       feeds: [],
     };
