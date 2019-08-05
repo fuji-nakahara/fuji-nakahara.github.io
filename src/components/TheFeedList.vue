@@ -28,7 +28,7 @@ export default {
   data() {
     return {
       feedUrls: [
-        'https://fuji-nakahara.hatenablog.com/feed',
+        'https://blog.fuji-nakahara.page/feed',
         'https://fuji-nakahara.page/genron-sf-2018/feed.xml',
         'https://fuji-nakahara.page/cyborg-classmate/feed.xml',
         'https://fuji-nakahara.page/transparent-blood-relation/feed.xml',
